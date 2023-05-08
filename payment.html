@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+</head>
+<body>
+   <a href="inddex.html">page 1</a> 
+   <form action=""><!--writing form is for collecting input from the user for example payment form-->
+       <h1>Payment Form</h1>
+       <h2>Contact information</h2>
+       <p>Name: <input type="text" name="name" required></p><!--in form we have to choose input if want to take input from the user and type text is used to take input in the form of text-->
+       <fieldset><!--this option is used to make a box on the given command for example making box on gendetr select option-->
+           <legend>Gender</legend><!--legend is used for naming the box-->
+       <p>
+           
+           Male <input type="radio" name="gender" id="male"><!--input type radio is used to collect info in the form of omr and if we select a single name for 2 or maore options then the user can onlky select a single option for example we have given gender name to both female and male option therefore the user can only choose one option either male or female-->
+           Female <input type="radio" name="gender" id="female">
+       </p>
+       </fieldset>
+       <p>Address: <textarea name="address" id="address" cols="100" rows="10"></textarea></p>
+       <p>Emali: <input type="email" name="email" id="email"></p>
+       <p>pincode: <input type="number" name="" id=""></p>
+       <h2>payment information</h2>
+       <p>Card type:
+           <select name="card_type" id="card_type">
+               <option value="">---Select a card type---</option>
+               <option value="Visa">Visa</option>
+               <option value="Debit card">Debit card</option>
+               <option value="Credit card">Credit Card</option>
+               <option value="Rupay">Rupay</option>
+           </select>
+       </p>
+       <p> 
+           Card number <input type="number" name="card_num" id="card_num">
+       </p>
+       <p>
+         Expiry Date: <input type="date" name="expiry_date" id="expiry_date">
+
+       </p>
+       <p>CVV <input type="password" name="cvv" id="cvv"></p>
+       <input type="submit" value="Pay now">
+
+   </form>
+</body>
+</html>
